@@ -256,7 +256,7 @@ html {
     top: 0;
     left: 0;
     color: #6dc6d9;
-    background-color: #fff;
+    background-color: #263B3F;
     width: 60px;
     height: 60px;
     text-align: center;
@@ -417,11 +417,11 @@ button:hover {
 }
 
 .service-item:hover h4 {
-    color: #1e1e1e;
+    color: #6dc6d9;
 }
 
 .service-item:hover p {
-    color: #4a4a4a;
+    color: #6dc6d9;
 }
 
 .service-item .service-icon {
