@@ -1,0 +1,26 @@
+/*in-body extensions*/
+.contact-resume
+{
+  font-size: large;
+  text-align: center;
+}
+
+/*in-footer extensions*/
+.nco-footer
+{
+  background-color: #263B3F;
+  color: white;
+  position: static;
+  text-align: right;
+}
+
+/*span extensions*/
+span.subtitle
+{
+  font-size: x-large;
+}
+
+span.mail
+{
+  color: #6dc6d9;
+}
