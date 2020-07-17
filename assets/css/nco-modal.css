@@ -1,0 +1,51 @@
+.modal-button
+{
+  background: white;
+  padding: 1em 2em;
+  color: #6dc6d9;
+  border:0;
+}
+
+.modal-zone
+{
+  display:none;
+  position:fixed;
+  z-index:1;
+  left:0;top:0;
+  height:100%;
+  width:100%;
+  overflow:auto;
+  background-color: rgba(0,0,0,0.4);
+
+  animation-name:modal-open;
+  animation-duration: 0.25s;
+}
+
+.modal-content
+{
+  background-color: #263B3F;
+  margin: 2% 32%;
+  padding: 20px;
+  width: 60%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.15);
+}
+
+@keyframes modal-open
+{
+  from{opacity:0} to {opacity: 1}
+}
+
+.close-button
+{
+  color: #6dc6d9;
+  text-align: right;
+  position:static;
+  font-size: 30px;
+}
+
+.close-button:hover
+{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -283,7 +283,7 @@ html {
     position: relative;
     min-height: 100vh;
     padding-bottom: 80px;
-    border-bottom: 3px solid rgba(250, 250, 250, 0.25);
+    border-bottom: 3px solid rgba(250, 250, 250, 0.45);
 }
 
 .section-heading {
@@ -358,7 +358,11 @@ button:hover {
 .right-image-post {
     margin-top: 60px;
     padding-top: 60px;
-    border-top: 2px solid rgba(250, 250, 250, 0.1);
+    border-top: 2px solid rgba(250, 250, 250, 0.05);
+
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 2px solid rgba(250, 250, 250, 0.05);
 }
 
 .left-image img,
@@ -527,6 +531,11 @@ section.my-work .section-heading {
     width: 100%;
     height: 100%;
     border-radius: 5px;
+}
+
+.isotope-item:hover
+{
+  cursor: pointer;
 }
 
 .lazyload {
