@@ -1,0 +1,71 @@
+@import url(fontawesome.css);
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+body
+{
+  font-family: 'Lato', sans-serif;
+  background: #263B3F;
+  color : white;
+}
+
+.headband
+{
+  background: #1C2B2E;
+  color : #6dc6d9;
+  text-align: left;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.core-content
+{
+  margin-left: 15px;
+}
+
+span.headband-title
+{
+  font-size: x-large;
+}
+
+span.mail
+{
+  color: #6dc6d9;
+}
+
+a:link
+{
+  color: #6dc6d9;
+  text-decoration: none;
+}
+a:visited
+{
+  color: #6dc6d9;
+  text-decoration: none;
+}
+a:hover
+{
+  color:white
+}
+a:focus
+{
+  color: #6dc6d9;
+  text-decoration: none;
+}
+a:active
+{
+  color: #6dc6d9;
+  text-decoration: none;
+}
+
+footer
+{
+  background-color: #1C2B2E;
+  color: white;
+  text-align: right;
+  left:0;
+  bottom: 0;
+  position: fixed;
+  width:100%
+}
