@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link rel="stylesheet" href="../assets/css/nco-utpi.css" />
+
+    <meta name="author" content="Nicolas Capelier" />
+    <meta name="description" content="" />
+
+    <title>UTPI - Clocks</title>
+  </head>
+
+  <body>
+
+    <div class="headband">
+      <br><a href="../utpi.html"><img class="utpi-logo" src="../assets/images/utpi-logo.png" alt="UTPI LOGO"/><span class="headband-title">&nbsp;&nbsp;&nbsp;&nbsp;Utility/Tools Programming Interface</span></a><br> &nbsp;
+    </div>
+
+    <div class="section-title">
+      <br><br><br>
+      <h2>
+        Clocks
+      </h2>
+      <p class="core-content">
+        The <span class="keyword-class">Clock</span> class allows you to create simple and efficient timers.
+      </p>
+    </div>
+
+    <div class="section-download">
+      <h2>
+        Download
+      </h2>
+      <div class="white-button">
+        <a href="packages/UTPI_Clocks.unitypackage" download>Download Package</a>
+      </div>
+    </div>
+
+    <div class="section-instantiation">
+      <h2>
+        Instantiation
+      </h2>
+      <p class="core-content">
+        The <span class="keyword-class">Clock</span> class uses a personnal <span class="keyword-unity-method">Update</span>() method on an invisible DontDestroyOnLoad game object called [Update Caller].
+        <br>This is why you need to instantiate your <span class="keyword-class">Clock</span> at the begining of the behaviour of your script (Generally in the <span class="keyword-unity-method">Start</span>() method) after declaring it at the top of your script.
+      </p>
+    </div>
+
+    <div class="section-constructors">
+      <h2>Constructors</h2>
+      <div class="core-content">
+        <table>
+          <tr>
+            <td><span class="keyword-class">Clock</span>()</td>
+            <td>Creates a clock that wont tick until you give it a new time.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-class">Clock</span>(float time)</td>
+            <td>Creates a clock ticking until the time hits zero.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-class">Clock</span>(float time, bool startsPaused)</td>
+            <td>Same as previous + the clock will start paused and will wait to be set on "play" to tick.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="section-properties">
+      <h2>Properties</h2>
+      <div class="core-content">
+        <table>
+          <tr>
+            <td><span class="keyword-variable">float</span> time</td>
+            <td>{get}</td>
+            <td>Current time of the clock.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-variable">bool</span> onFinish</td>
+            <td>{get}</td>
+            <td>Returns true when the clock hits zero.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-variable">bool</span> finished</td>
+            <td>{get}</td>
+            <td>Returns true if the clock's timer is equal to zero.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-variable">bool</span> paused</td>
+            <td>{get}</td>
+            <td>Returns true if the clock is paused.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="section-public-methods">
+      <h2>Public Methods</h2>
+      <div class="core-content">
+        <table>
+          <tr>
+            <td><span class="keyword-method">SetTime</span>()</td>
+            <td>Gives a new time to the clock.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">Stop</span>()</td>
+            <td>Stops the clock and set its time to zero.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">Play</span>()</td>
+            <td>Unpauses the clock.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">Pause</span>()</td>
+            <td>Pauses the clock.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+
+  </body>
+
+  <footer>
+    <div>
+      Copyright  &copy; 2020  Nicolas  Capelier &nbsp; &nbsp; &nbsp; &nbsp; Images on the website are all mine or royalty free. &nbsp; &nbsp; &nbsp; &nbsp;
+    </div>
+  </footer>
+
+</html>

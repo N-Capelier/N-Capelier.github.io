@@ -6,6 +6,32 @@ body
   font-family: 'Lato', sans-serif;
   background: #263B3F;
   color : white;
+  letter-spacing: 0.2px;
+}
+
+/* Buttons */
+
+.white-button
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.white-button a {
+    padding: 12px 20px;
+    background-color: #1C2B2E;
+    color: #6dc6d9;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    margin: 20px;
+}
+
+.white-button a:hover {
+    background-color: #6dc6d9;
+    color: #fff;
 }
 
 .headband
@@ -19,9 +45,26 @@ body
   left: 0;
 }
 
+.content
+{
+  margin-left: 15px;
+}
+
 .core-content
 {
   margin-left: 15px;
+  padding-bottom: 20px;
+}
+
+p.script-content
+{
+  background: black;
+  color: white;
+}
+
+h2
+{
+  margin-left: 4px;
 }
 
 span.headband-title
@@ -32,6 +75,49 @@ span.headband-title
 span.mail
 {
   color: #6dc6d9;
+}
+
+span.keyword-class
+{
+  color: #8FFF94;
+}
+
+span.keyword-method
+{
+  color: #EBFF6D;
+}
+
+span.keyword-unity-method
+{
+  color: #6dc6d9;
+}
+
+span.keyword-variable
+{
+  color: #999DF1
+}
+
+td,
+th
+{
+  border: 1px solid rgb(190, 190, 190);
+  padding: 10px;
+}
+
+table
+{
+  margin: 4px;
+  border-collapse: collapse;
+  border:2px solid rgb(200, 200, 2000);
+  /*letter-spacing: 1px;*/
+}
+
+img.utpi-logo
+{
+  margin-left: 20px;
+  margin-top: 2px;
+  width: 3%;
+  height: 3%;
 }
 
 a:link
