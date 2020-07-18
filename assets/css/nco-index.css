@@ -36,3 +36,10 @@ span.mail
   font-style:italic;
   color:#6dc6d9;
 }
+
+.temp
+{
+  padding-top: 40%;
+  padding-bottom: 100%;
+  color: red;
+}
