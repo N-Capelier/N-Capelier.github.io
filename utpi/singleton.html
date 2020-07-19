@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link rel="stylesheet" href="../assets/css/nco-utpi.css" />
+
+    <meta name="author" content="Nicolas Capelier" />
+    <meta name="description" content="" />
+
+    <title>UTPI - Singleton</title>
+  </head>
+
+  <body>
+
+    <div class="headband">
+      <br><a href="../utpi.html"><img class="utpi-logo" src="../assets/images/utpi-logo.png" alt="UTPI LOGO"/><span class="headband-title">&nbsp;&nbsp;&nbsp;&nbsp;Utility/Tools Programming Interface</span></a><br> &nbsp;
+    </div>
+
+    <div class="section-title">
+      <br><br><br>
+      <h2>
+        Singleton
+      </h2>
+      <p class="core-content">
+        The singleton design pattern restricts the instantiation of a class to a single instance with an easy acces to it.
+      </p>
+    </div>
+
+    <div class="section-download">
+      <h2>
+        Download
+      </h2>
+      <div class="white-button">
+        <a href="packages/UTPI_Singleton.unitypackage" download>Download Package</a>
+      </div>
+    </div>
+
+    <div class="section-instantiation">
+      <h2>
+        Instantiation
+      </h2>
+      <p class="core-content">
+        To transform your class to a singleton, you first need to make it inherit from the <span class="keyword-class">Singleton</span>&lt;<span class="keyword-t">T</span>&gt; class with <span class="keyword-t">T</span> the name of your class.
+        <br>Then you need to use the method <span class="keyword-method">CreateSingleton</span>()</td> (generally in the <span class="keyword-unity-method">Awake</span>()</td> method) to make your class an actual singleton.
+        <br>Now you can acces your class from everywhere with <span class="keyword-class">MyClassName</span>.Instance.
+        <br>&#9888; If your class is instantiated more than once, the other instances will be destroyed !
+      </p>
+    </div>
+
+    <div class="section-properties">
+      <h2>Properties</h2>
+      <div class="core-content">
+        <table>
+          <tr>
+            <td><span class="keyword-t">T</span> Instance</td>
+            <td>{get}</td>
+            <td>Gets the instance of the Singleton.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="section-public-methods">
+      <h2>Public Methods</h2>
+      <div class="core-content">
+        <table>
+          <tr>
+            <td><span class="keyword-method">CreateSingleton</span>()</td>
+            <td>Makes the object a Singleton.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">CreateSingleton</span>(<span class="keyword-variable">bool</span> isUndestroyableOnLoad)</td>
+            <td>Makes the object a non-destroyable on load Singleton.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+
+  </body>
+
+  <footer>
+    <div>
+      Copyright  &copy; 2020  Nicolas  Capelier &nbsp; &nbsp; &nbsp; &nbsp; Images on the website are all mine or royalty free. &nbsp; &nbsp; &nbsp; &nbsp;
+    </div>
+  </footer>
+
+</html>

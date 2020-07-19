@@ -79,7 +79,7 @@ span.mail
 
 span.keyword-class
 {
-  color: #8FFF94;
+  color: #70D170;
 }
 
 span.keyword-method
@@ -94,7 +94,12 @@ span.keyword-unity-method
 
 span.keyword-variable
 {
-  color: #999DF1
+  color: #999DF1;
+}
+
+span.keyword-t
+{
+  color: #BCFF82;
 }
 
 td,
