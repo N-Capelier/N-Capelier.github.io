@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link rel="stylesheet" href="../assets/css/nco-utpi.css" />
+
+    <meta name="author" content="Nicolas Capelier" />
+    <meta name="description" content="" />
+
+    <title>UTPI - Build Console</title>
+  </head>
+
+  <body>
+
+    <div class="headband">
+      <br><a href="../utpi.html"><img class="utpi-logo" src="../assets/images/utpi-logo.png" alt="UTPI LOGO"/><span class="headband-title">&nbsp;&nbsp;&nbsp;&nbsp;Utility/Tools Programming Interface</span></a><br> &nbsp;
+    </div>
+
+    <div class="section-title">
+      <br><br><br>
+      <h2>
+        Build Console
+      </h2>
+      <p class="core-content">
+        The <span class="keyword-class">BuildConsole</span> class allows you to create a console in your game's build and display logs in it.
+      </p>
+    </div>
+
+    <div class="section-download">
+      <h2>
+        Download
+      </h2>
+      <div class="white-button">
+        <a href="packages/UTPI_Build_Console.unitypackage" download>Download Package</a>
+      </div>
+    </div>
+
+    <div class="section-public-methods">
+      <h2>Public Methods</h2>
+      <div class="core-content">
+        <table>
+          <tr>
+            <td><span class="keyword-method">Log</span>(<span class="keyword-variable">object</span> message)</td>
+            <td>Logs a message to the Build Console.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">LogWarning</span>(<span class="keyword-variable">object</span> message)</td>
+            <td>A variant of BuildConsole.Log that logs a warning message to the console.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">LogError</span>(<span class="keyword-variable">object</span> message)</td>
+            <td>A variant of BuildConsole.Log that logs an error message to the console.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">Assert</span>(<span class="keyword-variable">bool</span> condition)</td>
+            <td>Assert a condition and logs an error message to the build console on failure.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">Assert</span>(<span class="keyword-variable">bool</span> condition, <span class="keyword-variable">object</span> message)</td>
+            <td>Assert a condition and logs an error message to the build console on failure.</td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">Show</span>()</td>
+            <td>Displays the build console.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">Hide</span>()</td>
+            <td>Hides the build console.</td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">SetConsoleSize</span>(<span class="keyword-variable">int</span> size)</td>
+            <td>Changes the console's maximum displayed logs. Warning : SetConsoleSize() resets the console's logs memory. Default size is 10.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">SetFont</span>(<span class="keyword-class">Font</span> font)</td>
+            <td>Changes the font in the build console. Default font is Arial.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">SetColor</span>(<span class="keyword-variable">Color</span> color)</td>
+            <td>Changes the text color in the build console. Default color is black.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">SetFont</span>(<span class="keyword-variable">int</span> size)</td>
+            <td>Changes the text size in the build console. Default size for a full HD screen is 40.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+
+  </body>
+
+  <footer>
+    <div>
+      Copyright  &copy; 2020  Nicolas  Capelier &nbsp; &nbsp; &nbsp; &nbsp; Images on the website are all mine or royalty free. &nbsp; &nbsp; &nbsp; &nbsp;
+    </div>
+  </footer>
+
+</html>
