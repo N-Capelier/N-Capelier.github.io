@@ -360,9 +360,17 @@ button:hover {
     padding-top: 60px;
     border-top: 2px solid rgba(250, 250, 250, 0.05);
 
-    margin-bottom: 60px;
-    padding-bottom: 60px;
-    border-bottom: 2px solid rgba(250, 250, 250, 0.05);
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    /*border-bottom: 2px solid rgba(250, 250, 250, 0.05);*/
+
+    max-width:80%;
+    height:auto;
+}
+
+.left-image-post{
+    max-width:80%;
+    height:auto;
 }
 
 .left-image img,

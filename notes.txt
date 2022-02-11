@@ -4,3 +4,11 @@ dark-blue : #263B3F
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+projects:
+  Overstrike Arena
+  Fiverr
+  Fall Garden
+  UTPI
+  Pirate Academy
+  Spirit Light
