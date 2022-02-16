@@ -43,3 +43,17 @@ span.mail
   padding-bottom: 100%;
   color: red;
 }
+
+.column
+{
+  padding-right: 5%;
+  float: left;
+  width: 50%
+}
+
+.row:after
+{
+  content: : "";
+  display: : table;
+  clear: both;
+}
