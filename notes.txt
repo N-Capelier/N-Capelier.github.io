@@ -10,7 +10,7 @@ projects:
   Fiverr
   Fall Garden
   Pirate Academy
-  UTPI
+  UMO
   Spirit Light
 
 
