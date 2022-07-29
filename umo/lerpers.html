@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link rel="stylesheet" href="../assets/css/nco-umo.css" />
+
+    <meta name="author" content="Nicolas Capelier" />
+    <meta name="description" content="" />
+
+    <title>UMO - Lerpers</title>
+  </head>
+
+  <body>
+
+    <div class="headband">
+      <br><a href="../umo.html"><img class="umo-logo" src="../assets/images/umo-logo.png" alt="UMO LOGO"/><span class="headband-title">&nbsp;&nbsp;&nbsp;&nbsp;Unity Modules</span></a><br> &nbsp;
+    </div>
+
+    <div class="section-title">
+      <br><br><br>
+      <h2>
+        Lerpers
+      </h2>
+      <p class="core-content">
+        The <span class="keyword-class">Lerper</span> class allows you to create a lerp overtime.
+        <br>You will find lerpers for every variable type currently handled by Unity Lerps.
+        <br>The <span class="keyword-class">Lerper</span> class is an abstract parent for all the lerpers avaible.
+      </p>
+    </div>
+
+    <div class="section-download">
+      <h2>
+        Download
+      </h2>
+      &nbsp;&nbsp;&nbsp;&nbsp;Free download will be avaible soon.
+      <!--<div class="white-button">
+        <a href="packages/UMO_Clocks.unitypackage" download>Download Package</a>
+      </div>-->
+    </div>
+
+    <!--<div class="section-instantiation">
+      <h2>
+        Instantiation
+      </h2>
+      <p class="core-content">
+        The <span class="keyword-class">Clock</span> class uses a personnal <span class="keyword-unity-method">Update</span>() method on an invisible DontDestroyOnLoad game object called [Update Caller].
+        <br>This is why you need to instantiate your <span class="keyword-class">Clock</span> at the begining of the behaviour of your script (Generally in the <span class="keyword-unity-method">Start</span>() method) after declaring it at the top of your script.
+      </p>
+    </div>-->
+
+    <div class="section-constructors">
+      <h2>All classes</h2>
+      <div class="core-content">
+        <table>
+          <tr>
+            <td>Accessor</td>
+            <td><span class="keyword-class">ClassName</span>()</td>
+            <td><span class="keyword-variable">handledType</span></td>
+            <td>Lerp avaible</td>
+            <td>Slerp avaible</td>
+          </tr>
+          <tr>
+            <td>Private Abstract</td>
+            <td><span class="keyword-class">Lerper</span>()</td>
+            <td>none</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Public</td>
+            <td><span class="keyword-class">FloatLerper</span>()</td>
+            <td><span class="keyword-variable">float</span></td>
+            <td>YES</td>
+            <td>NO</td>
+          </tr>
+          <tr>
+            <td>Public</td>
+            <td><span class="keyword-class">Vector2Lerper</span>()</td>
+            <td><span class="keyword-class">Vector2</span></td>
+            <td>YES</td>
+            <td>NO</td>
+          </tr>
+          <tr>
+            <td>Public</td>
+            <td><span class="keyword-class">Vector3Lerper</span>()</td>
+            <td><span class="keyword-class">Vector3</span></td>
+            <td>YES</td>
+            <td>YES</td>
+          </tr>
+          <tr>
+            <td>Public</td>
+            <td><span class="keyword-class">Vector4Lerper</span>()</td>
+            <td><span class="keyword-class">Vector4</span></td>
+            <td>YES</td>
+            <td>NO</td>
+          </tr>
+          <tr>
+            <td>Public</td>
+            <td><span class="keyword-class">QuaternionLerper</span>()</td>
+            <td><span class="keyword-class">Quaternion</span></td>
+            <td>YES</td>
+            <td>YES</td>
+          </tr>
+          <tr>
+            <td>Public</td>
+            <td><span class="keyword-class">ColorLerper</span>()</td>
+            <td><span class="keyword-class">Color</span></td>
+            <td>YES</td>
+            <td>NO</td>
+          </tr>
+          <tr>
+            <td>Public</td>
+            <td><span class="keyword-class">Color32Lerper</span>()</td>
+            <td><span class="keyword-class">Color32</span></td>
+            <td>YES</td>
+            <td>NO</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="section-properties">
+      <h2>Actions</h2>
+      <div class="core-content">
+        <table>
+          <tr>
+            <td><span class="keyword-class">Action</span>&#60;<span class="keyword-class">T</span>&#62; lerpAction</td>
+            <td>Can not be null.</td>
+            <td>This action is called on every frame when the lerper is running. The <span class="keyword-class">T</span> variable is the lerped value.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-class">Action</span> completedAction</td>
+            <td>Optional.</td>
+            <td>This action is called when the lerper finishes the lerp.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="section-public-methods">
+      <h2>Public Methods</h2>
+      <div class="core-content">
+        <table>
+          <tr>
+            <td><span class="keyword-method">MethodName</span>(<span class="keyword-variable">ParamType</span> param)</td>
+            <td><span class="keyword-variable">ReturnType</span>
+            <td>Description</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">Lerp</span>(<span class="keyword-class">T</span> a, <span class="keyword-class">T</span> b, <span class="keyword-variable">float</span> time, <span class="keyword-class">Action</span>&#60;<span class="keyword-class">T</span>&#62; lerpAction)</td>
+            <td><span class="keyword-class">Lerper</span>
+            <td>Start a new lerp.<br>Returns: The lerper.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">Lerp</span>(<span class="keyword-class">T</span> a, <span class="keyword-class">T</span> b, <span class="keyword-variable">float</span> time, <span class="keyword-class">Action</span>&#60;<span class="keyword-class">T</span>&#62; lerpAction, <span class="keyword-class">Action</span> completedAction)</td>
+            <td><span class="keyword-class">Lerper</span>
+            <td>Start a new lerp.<br>Returns: The lerper.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">Slerp</span>(<span class="keyword-class">T</span> a, <span class="keyword-class">T</span> b, <span class="keyword-variable">float</span> time, <span class="keyword-class">Action</span>&#60;<span class="keyword-class">T</span>&#62; lerpAction)</td>
+            <td><span class="keyword-class">Lerper</span>
+            <td>Start a new lerp.<br>Returns: The lerper.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">Slerp</span>(<span class="keyword-class">T</span> a, <span class="keyword-class">T</span> b, <span class="keyword-variable">float</span> time, <span class="keyword-class">Action</span>&#60;<span class="keyword-class">T</span>&#62; lerpAction, <span class="keyword-class">Action</span> completedAction)</td>
+            <td><span class="keyword-class">Lerper</span>
+            <td>Start a new lerp.<br>Returns: The lerper.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">SetLerpAction</span>(<span class="keyword-class">Action</span>&#60;<span class="keyword-class">T</span>&#62; lerpAction)</td>
+            <td><span class="keyword-class">Lerper</span>
+            <td>Set a new lerpAction to the lerper.<br>Returns: The lerper.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">SetCompletedAction</span>(<span class="keyword-class">Action</span> completedAction)</td>
+            <td><span class="keyword-class">Lerper</span>
+            <td>Set a new completedAction to the lerper.<br>Returns: The lerper.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">SetActions</span>(<span class="keyword-class">Action</span>&#60;<span class="keyword-class">T</span>&#62; lerpAction, <span class="keyword-class">Action</span> completedAction)</td>
+            <td><span class="keyword-class">Lerper</span>
+            <td>Set both lerpAction and completedAction of the lerper.<br>Returns: The lerper.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">Replay</span>()</td>
+            <td><span class="keyword-class">Lerper</span>
+            <td>Replay the lerper with the same parameters.<br>Returns: The lerper.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">GetTime</span>()</td>
+            <td><span class="keyword-variable">float</span>
+            <td>Returns: The current progression time of the lerper.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">GetCompletion</span>()</td>
+            <td><span class="keyword-variable">float</span>
+            <td>Returns: The current completion (between 0 and 1) of the lerper.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">Pause</span>()</td>
+            <td><span class="keyword-variable">void</span>
+            <td>Pause the lerp.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">Resume</span>()</td>
+            <td><span class="keyword-variable">void</span>
+            <td>Resume the lerp.</td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">IsPaused</span>()</td>
+            <td><span class="keyword-variable">bool</span>
+            <td>Returns: True if the countdown lerper is paused.</returns></td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">IsFinished</span>()</td>
+            <td><span class="keyword-variable">bool</span>
+            <td>Returns: True if the lerper is completed.</returns></td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">End</span>()</td>
+            <td><span class="keyword-variable">bool</span>
+            <td>End the lerper and call the completedAction.<br>Returns: True if the lerper was not already finished and the lerpAction is not null.</returns></td>
+          </tr>
+          <tr>
+            <td><span class="keyword-method">Cancel</span>()</td>
+            <td><span class="keyword-variable">bool</span>
+            <td>Cancel the lerper without calling the completedAction.<br>Returns: True if the lerper was not already finished.</returns></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="section-examples">
+      <h2>Examples</h2>
+      <div class="core-content">
+        <h3>Example 1</h3>
+        <span class="keyword-class">FloatLerper</span> lerper = <span class="keyword-variable">new</span> <span class="keyword-class">FloatLerper</span>();
+        <br><br><span class="keyword-variable">private void</span> <span class="keyword-class">Start</span>()
+        <br>&#10100;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;lerper.<span class="keyword-method">Lerp</span>(0f, 10f, 5f, x => <span class="keyword-class">Debug</span>.<span class="keyword-method">Log</span>($"Current value is &#10100;x&#10101;."), () => <span class="keyword-class">Debug</span>.<span class="keyword-method">Log</span>($"Lerp is now finished."));
+        <br>&#10101;
+        <br><br>
+        <h3>Example 2</h3>
+        <span class="keyword-class">QuaternionLerper</span> lerper = <span class="keyword-variable">new</span> <span class="keyword-class">QuaternionLerper</span>();
+        <br><br><span class="keyword-variable">private void</span> <span class="keyword-class">Start</span>()
+        <br>&#10100;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;lerper.<span class="keyword-method">Lerp</span>(0f, 10f, 5f, <span class="keyword-method">OnLerpUpdate</span>);
+        <br>&#10101;
+        <br><br><span class="keyword-variable">private void</span> <span class="keyword-method">OnLerpUpdate</span>(<span class="keyword-method">Quaternion</span> quat);
+        <br>&#10100;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword-class">Debug</span>.<span class="keyword-method">Log</span>($"Current value is &#10100;quat&#10101;.")
+        <br>&#10101;
+      </div>
+    </div>
+
+
+  </body>
+
+  <footer>
+    <div>
+      Copyright  &copy; 2020  Nicolas  Capelier &nbsp; &nbsp; &nbsp; &nbsp; Images on the website are all mine or royalty free. &nbsp; &nbsp; &nbsp; &nbsp;
+    </div>
+  </footer>
+
+</html>
