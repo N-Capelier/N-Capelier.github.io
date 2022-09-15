@@ -102,6 +102,18 @@ span.keyword-t
   color: #BCFF82;
 }
 
+.example-background
+{
+  background: #223438;
+}
+
+.example-content
+{
+  margin-left: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
 td,
 th
 {

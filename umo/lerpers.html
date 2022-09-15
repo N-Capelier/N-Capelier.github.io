@@ -232,15 +232,21 @@
 
     <div class="section-examples">
       <h2>Examples</h2>
-      <div class="core-content">
-        <h3>Example 1</h3>
+      <h3>Example 1</h3>
+      <div class="example-background">
+      <div class="example-content">
         <span class="keyword-class">FloatLerper</span> lerper = <span class="keyword-variable">new</span> <span class="keyword-class">FloatLerper</span>();
         <br><br><span class="keyword-variable">private void</span> <span class="keyword-class">Start</span>()
         <br>&#10100;
         <br>&nbsp;&nbsp;&nbsp;&nbsp;lerper.<span class="keyword-method">Lerp</span>(0f, 10f, 5f, x => <span class="keyword-class">Debug</span>.<span class="keyword-method">Log</span>($"Current value is &#10100;x&#10101;."), () => <span class="keyword-class">Debug</span>.<span class="keyword-method">Log</span>($"Lerp is now finished."));
         <br>&#10101;
-        <br><br>
-        <h3>Example 2</h3>
+        <br>
+      </div>
+      </div>
+      <br>
+      <h3>Example 2</h3>
+      <div class="example-background">
+      <div class="example-content">
         <span class="keyword-class">QuaternionLerper</span> lerper = <span class="keyword-variable">new</span> <span class="keyword-class">QuaternionLerper</span>();
         <br><br><span class="keyword-variable">private void</span> <span class="keyword-class">Start</span>()
         <br>&#10100;
@@ -250,6 +256,7 @@
         <br>&#10100;
         <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword-class">Debug</span>.<span class="keyword-method">Log</span>($"Current value is &#10100;quat&#10101;.")
         <br>&#10101;
+      </div>
       </div>
     </div>
 
