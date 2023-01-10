@@ -402,6 +402,7 @@ button:hover {
 }
 
 .service-item {
+    min-height: 380px;
     max-height: 450px;
     margin-bottom: 10px;
     padding: 50px;
