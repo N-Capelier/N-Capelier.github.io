@@ -1,733 +1,900 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="Nicolas Capelier" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    />
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Nicolas Capelier - Portfolio">
+    <meta name="author" content="Nicolas Capelier">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="Nicolas Capelier - Portfolio" /> <!-- website name -->
+    <meta property="og:site" content="https://n-capelier.github.io/" /> <!-- website link -->
+    <meta property="og:title" content="Nicolas Capelier - Portfolio" /> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="https://n-capelier.github.io/" /> <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
     <title>Nicolas Capelier - Portfolio</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap"
+        rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css" />
-    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
-    <link rel="stylesheet" href="assets/css/owl.css" />
-    <link rel="stylesheet" href="assets/css/lightbox.css" />
-    <link rel="stylesheet" href="assets/css/nco-index.css" />
-    <link rel="stylesheet" href="assets/css/nco-modal.css" />
-  </head>
+    <!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+</head>
 
-  <body>
-    <div id="page-wraper">
-      <!-- Sidebar Menu -->
-      <div class="responsive-nav">
-        <i class="fa fa-bars" id="menu-toggle"></i>
-        <div id="menu" class="menu">
-          <i class="fa fa-times" id="menu-close"></i>
-          <div class="container">
-            <!--<div class="image">
-              <a href="#"><img src="assets/images/nico.png" alt="Nicolas Capelier" /></a>
-            </div>-->
-            <div class="author-content">
-              <h4>Nicolas Capelier</h4>
-              <span>Game Developer and Technical Game Designer</span>
-            </div>
-            <nav class="main-nav" role="navigation">
-              <ul class="main-menu">
-                <li><a href="#section1">Who I am</a></li>
-                <li><a href="#section2">What I am good at</a></li>
-                <li><a href="#section3">My Work</a></li>
-                <li><a href="#section4">Contact and Resume</a></li>
-              </ul>
-            </nav>
+<body data-spy="scroll" data-target=".fixed-top">
 
-            <div class="social-network">
-              <ul class="soial-icons">
-
-                <!--<li>
-                  <a href="https://fb.com/templatemo"><i class="fa fa-facebook"></i></a>
-                </li>-->
-
-                <!--<li>
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                </li>-->
-
-                <li>
-                  <a href="https://www.linkedin.com/in/nicolas-capelier/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </li>
-
-                <!--<li>
-                  <a href="https://nx0r.itch.io/" target="_blank"><img src="assets/images/itchio-textless-black.png" alt="Itch.io icon"><i class="fa fa-itch"></i></a>
-                </li>-->
-
-                <!--<li>
-                  <a href="#"><i class="fa fa-rss"></i></a>
-                </li>-->
-
-              </ul>
-            </div>
-
-        </div>
-      </div>
-
-      <section class="section about-me" data-section="section1">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container">
-          <div class="section-heading">
-            <h2>Who I am</h2>
-            <div class="line-dec"></div>
-            <span class="subtitle">
-              Hello! My name is Nicolas and I am a junior<br><b>Game Developer and Technical Game Designer</b>.
-            </span>
-          </div>
-          <div class="left-image-post">
+
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="Nicolas Capelier"></a>
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Mark</a> -->
+
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#about">Who I am</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#services">My skillset</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#projects">My work</a>
+                    </li>
+                    <!--<li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item page-scroll" href="project.html">Project Details</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="terms.html">Terms Conditions</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
+                        </div>
+                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <span class="nav-item social-icons">
+                    <div class="tooltip-container">
+                        <a href="https://www.linkedin.com/in/nicolas-capelier/" target="_blank" class="tooltip-button">
+                            <span class="fa-stack">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x"></i>
+                            </span>
+                            <span class="tooltip-text">Linkedin</span>
+                        </a>
+                    </div>
+                    <div class="tooltip-container">
+                        <a href="documents/Nicolas_Capelier_Resume.pdf" target="_blank" class="tooltip-button">
+                            <span class="fa-stack">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-file-alt fa-stack-1x"></i>
+                            </span>
+                            <span class="tooltip-text">Resume</span>
+                        </a>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
             <div class="row">
-              <div class="col-md-6">
-                <div class="left-text">
-                  <img src="assets/images/left-image.jpg" alt="Game Design picture" />
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h1 class="h1-large">I develop video games</h1>
+                        <a class="btn-solid-lg page-scroll" href="#about">Discover</a>
+                        <a class="btn-solid-lg page-scroll" href="documents/Nicolas_Capelier_Resume.pdf"
+                            target="_blank">Resume</a>
+                    </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="left-text">
-                  <h4>I do Game Design</h4>
-                  <p>
-                    I like to <b>design</b> new games with unique <b>mechanics</b> and <b>systems</b>, finding inspiration from
-                    <b>online multiplayer</b> games and <b>sandbox</b> games to give the player unique ways to <b>have fun</b>.
-                    I am also used to working with <b>Agile</b> methods of production as I had the opportunity to use
-                    them in <b>short and long term projects</b>.
-                  </p>
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="right-image-post">
             <div class="row">
-              <div class="col-md-6">
-                <div class="left-image">
-                  <h4>And programming</h4>
-                  <p>
-                    I enjoy <b>programming game features</b> and <b>prototyping concepts</b> to get a quick overview of the <b>potential of the systems and
-                    mechanics</b> but also <b>identify the challenges</b> in the production of games.
-                    I am entertained by working with <b>Unity3D</b> and <b>C#</b>.
-                    Finally I usually create <b>tools</b> for my projects to facilitate the development of my games.
-                  </p>
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <a class="btn-outline-lg page-scroll" href="#contact"><i class="fas fa-user"></i>Contact Me</a>
+                    </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="right-image">
-                  <img src="assets/images/right-image.jpg" alt="Programming picture" />
-                </div>
-              </div>
             </div>
-          </div>
-<!--        <div class="centered">
-          <h4>
-            I am a Technical Game Designer.
-          </h4>
-          <span>
-            Integer suscipit condimentum aliquet. Nam quis risus metus.
-            Nullam faucibus quam eget arcu pretium tincidunt. Nam libero dui.
-          </span>
-        </div> -->
-      </section>
+        </div>
+    </header>
+    <!-- end of header -->
 
-      <section class="section my-services" data-section="section2">
+
+    <!-- About-->
+    <div id="about" class="basic-1 bg-gray">
         <div class="container">
-          <div class="section-heading">
-            <h2>What I am good at</h2>
-            <div class="line-dec"></div>
-            <!--<span>
-              Vivamus et dui a massa venenatis fringilla. Proin lacus massa, eleifend sed fermentum in,
-               dignissim vel metus. Nunc accumsan leo nec felis porttitor.
-            </span>-->
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="first-service-icon service-icon"></div>
-                <h4>Creative Ideas</h4>
-                <p>
-                  I can design <b>game systems and mechanics</b>, create <b>documentation</b> and <b>share</b> my work with everyone in the team.
-                  I am used to working with many people specialized in different aspects of game development.
-                </p>
-              </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="text-container first">
+                        <h2>Hi there I'm Nicolas,</h2>
+                        <p>I'm passionate about designing and building engaging games.
+                            I enjoy being involved in the entire development process, from initial concept to technical
+                            implementation and final delivery.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-container second">
+                        <div class="time">2024 - PRESENT</div>
+                        <h6>Freelance Lead Game Developer</h6>
+                        <p>Working on <a href="https://www.jolibrain.io/" target="_blank" class="blue">Jolibrain</a> and
+                            other projects for <a href="https://brig.ht/" target="_blank" class="blue">Bright</a>.</p>
+                        <div class="time">2023 - 2024</div>
+                        <h6>Online Gameplay Programmer</h6>
+                        <p>Developing online features on Reign Of Dwarf (now <a href="https://www.mithrall.com/"
+                                target="_blank" class="blue">Mithrall</a>) for <a
+                                href="https://www.anklebreaker-studio.com/" target="_blank" class="blue">AnkleBreaker
+                                Studio</a>.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-container third">
+                        <div class="time">2020 - 2023</div>
+                        <h6>Freelance Technical Designer</h6>
+                        <p>Game development and technical consulting for small agencies.</p>
+                        <div class="time">2018 - 2023</div>
+                        <h6>Game Design Student</h6>
+                        <p>Studying game development at <a href="https://rubika-edu.com/" target="_blank"
+                                class="blue">RUBIKA Supinfogame</a>.</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="second-service-icon service-icon"></div>
-                <h4>Game Development</h4>
-                <p>
-                  For the past three years, I have been working with <b>Unity3D</b> and I really enjoy <b>programming</b>.
-                  I can create <b>game prototypes</b> but also work on <b>project architecture</b> and <b>technical workflow</b>.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="third-service-icon service-icon"></div>
-                <h4>Simple and useful tools</h4>
-                <p>
-                  I have never done a project without creating <b>tools</b>. Extending the <b>game engine editor</b> I am working on always
-                  allowing the team I am working with to <b>save time</b> and <b>keep their productivity to its maximum potential</b>.<br><br>
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="fourth-service-icon service-icon"></div>
-                <h4>Communication between teams</h4>
-                <p>
-                  I can easily <b>communicate with different teams</b>.
-                  I can especially produce <b>technical documentation</b> for game programmers to understand game features faster.
-                  I can also provide a <b>technical point of view</b> during the conception and <b>anticipate technical difficulties</b>.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
-
-      <section class="section my-work" data-section="section3">
-        <div class="container">
-          <div class="section-heading">
-            <h2>My Work</h2>
-            <div class="line-dec"></div>
-            <span>
-              Here is a sample of the projects I did so far.</span>
-          </div>
-          <div class="row">
-            <div class="isotope-wrapper">
-              <form class="isotope-toolbar">
-                <label
-                  ><input
-                    type="radio"
-                    data-type="*"
-                    checked=""
-                    name="isotope-filter"
-                  />
-                  <span>All</span></label
-                >
-
-                <label
-                  ><input
-                    type="radio"
-                    data-type="Unity Games"
-                    name="isotope-filter"
-                  />
-                  <span>Unity Games</span></label
-                >
-
-                <label
-                  ><input
-                    type="radio"
-                    data-type="Tools"
-                    name="isotope-filter"
-                  />
-                  <span>Tools</span></label
-                >
-
-                <label
-                  ><input
-                    type="radio"
-                    data-type="Other Games"
-                    name="isotope-filter"
-                  />
-                  <span>Other</span></label
-                >
-              </form>
-
-              <div class="isotope-box">
-
-                                                              <!-- PROJECT 1 -->
-
-                <div class="isotope-item" data-type="Unity Games" id="modalBtn1">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/portfolio-seance.png"
-                      alt="Seance picture"
-                    />
-                    <figcaption>
-                      <h4>Seance</h4>
-                      <span>Multiplayer Roguelite<br><b>Technical game designer and lead programmer</b><br>Team of 9 people<br>2022-2023</span>
-                      <div class="portfolio-click"><br>Click to learn more</div>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                                                              <!-- PROJECT 2 -->
-                <div class="isotope-item" data-type="Unity Games" id="modalBtn6">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/portfolio-overstrike-arena.png"
-                      alt="Overstrike Arena"
-                    />
-                    <figcaption>
-                      <h4>Overstrike Arena</h4>
-                      <span>Competitive multiplayer online game<br><b>Project owner & Technical game designer</b><br>Team of 7 people<br>2021-2022</span>
-                      <div class="portfolio-click"><br>Click to learn more</div>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                                                              <!-- PROJECT 3 -->
-
-                <div class="isotope-item" data-type="Other Games" id="modalBtn2">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/portfolio-fiverr.png"
-                      alt="Fiverr gigs"
-                    />
-                    <figcaption>
-                      <h4>Fiverr gigs</h4>
-                      <span>Prototyping and online Unity3D and C# lessons<br>Personnal project<br>2021-...</span>
-                      <div class="portfolio-click"><br>Click to learn more</div>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                                                              <!-- PROJECT 4 -->
-
-                <div class="isotope-item" data-type="Unity Games" id="modalBtn3">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/portfolio-fall-garden.png"
-                      alt="Fall Garden"
-                    />
-                    <figcaption>
-                      <h4>Fall Garden</h4>
-                      <span>Narrative game for mobile<br><b>Game designer and lead programmer</b><br>Team of 8 people<br>2021</span>
-                      <div class="portfolio-click"><br>Click to learn more</div>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                                                              <!-- PROJECT 5 -->
-
-                <div class="isotope-item" data-type="Unity Games" id="modalBtn4">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/portfolio-pirate-academy.png"
-                      alt="Pirate Academy"
-                    />
-                    <figcaption>
-                      <h4>Pirate Academy</h4>
-                      <span>Warioware-like<br><b>Lead programmer</b><br>Team of 40 prople<br>2021</span>
-                      <div class="portfolio-click"><br>Click to learn more</div>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                                                              <!-- PROJECT 6 -->
-
-                <div class="isotope-item" data-type="Tools" id="modalBtn5">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/portfolio-new-project.png"
-                      alt="UMO"
-                    />
-                    <figcaption>
-                      <h4>Unity Modules</h4>
-                      <span>Unity assets and tools library<br>Personnal project<br>2021-...</span>
-                      <div class="portfolio-click"><br>Click to learn more</div>
-                    </figcaption>
-                  </figure>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section contact-me" data-section="section4">
-        <div class="container">
-          <div class="section-heading">
-            <h2>Contact and Resume</h2>
-            <div class="line-dec"></div>
-          </div>
-          <div class="centered">
-          <span>
-            You can contact me anytime by email at <a><span class="mail">capelier.nicolas@gmail.com</span></a>.
-            I always respond as quickly as possible!
-          </span>
-          <div class="white-button">
-            <br>
-            <br>
-            <a href="assets/documents/Nicolas_Capelier_Resume.pdf" target="_blank">Click here to see my resume</a>
-          </div>
-        </div>
-
-        </div>
-        <br><br>
-
-
-        <!-- portfolio projects modals-->
-
-        <div class="modal-zone" id="portfolioModal1">
-          <div class="modal-content">
-            <span class="close-button" id="closeBtn1"> &times;</span>
-            <span>
-              <center>
-                <h2>Seance</h2>
-                <h4>About</h4>
-              </center>
-              <div class="row">
-                  <div class="column">
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Role</b>: Technical game designer, Lead programmer<br>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Duration</b>: 9 months<br>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Team</b>: 9 students<br>
-                </div>
-                <div class="column">
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Genre</b>: Roguelike<br>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Platform</b>: PC<br>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Engine</b>: UnityEngine<br>
-                </div>
-              </div>
-              <br>
-              <div class="row">
-                <div class="column">
-                  <h4><center>Game Overview</center></h4>
-                  Seance is an online multiplayer game in which three players will embody participants in a role-playing game
-                  and will have to outsmart the challenges of the game master.<br><br>
-                  The true nature of the game is revealed when a powerful demon, haunting the game, starts possessing the game master.
-                  Players will have no other choice but to cheat to make their way through the traps of the demon.<br><br>
-                  Watch out not getting caught, or you may regret your actions.
-                  </div>
-                <div class="column">
-                  <h4><center>My Work</center></h4>
-                  Seance is my graduation project.<br><br>
-                  In this project, I am in charge of the technical pipeline, the creation of the project architecture with its main systems and the development of tools for the game designers and game artists.<br><br>
-                  I started this project by writing the technical pipeline and share it with the team in the project's documentation on Notion.
-                  I am developing a complete project architecture to handle a multiplayer turn based card game with Fish-Networking and an event queue system.
-                  I also developed different tools like a card editor or a nodal tool to edit timed visual events outside of the code to ease the integration of visual feedback.<br><br>
-                  This project allows me to experiment a complete game development production for both technical game design and lead programming.
-                </div>
-              </div>
-              <center>
-                <div class="white-button">
-                  <br>
-                  <a href="https://www.youtube.com/watch?v=bIUXMw96r7g&ab_channel=Rubika" target="_blank">Watch Seance trailer</a>
-                </div>
-            </center>
-            </span>
-          </div>
-        </div>
-
-        <div class="modal-zone" id="portfolioModal2">
-          <div class="modal-content">
-            <span class="close-button" id="closeBtn2"> &times;</span>
-            <span>
-              <center>
-                <h2>Fiverr Gigs</h2>
-                <h4>About</h4>
-              </center>
-              <div class="row">
-                  <div class="column">
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Role</b>: Seller<br>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Duration</b>: Started in July 2021<br>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Team</b>: Personnal project<br>
-                </div>
-                <div class="column">
-                  <!--&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Genre</b>: ___<br>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Platform</b>: ___<br>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Engine</b>: ___<br>-->
-                </div>
-              </div>
-              <br>
-              <div class="row">
-                <div class="column">
-                  <h4><center>Project Overview</center></h4>
-                  I started selling online services on Fiverr including Unity3D and C# lessons, game prototyping for small projects and Unity3D tools and utilities.
-                </div>
-                <!--<div class="column">
-                  <h4><center>My job</center></h4>
-                  Some text
-                </div>-->
-              </div>
-              <center>
-                <div class="white-button">
-                  <br>
-                  <a href="https://fiverr.com/nicolascapelier" target="_blank">Click here to open Fiverr</a>
-                </div>
-            </center>
-            </span>
-          </div>
-        </div>
-
-        <div class="modal-zone" id="portfolioModal3">
-          <div class="modal-content">
-            <span class="close-button" id="closeBtn3"> &times;</span>
-            <span>
-              <center>
-                <h2>Fall Garden</h2>
-                <h4>About</h4>
-              </center>
-              <div class="row">
-                  <div class="column">
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Role</b>: Lead programmer, Game designer<br>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Duration</b>: 5 months<br>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Team</b>: 8 students<br>
-                </div>
-                <div class="column">
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Genre</b>: Snake-like narrative game<br>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Platform</b>: Mobile (Android)<br>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Engine</b>: UnityEngine<br>
-                </div>
-              </div>
-              <br>
-              <div class="row">
-                <div class="column">
-                  <h4><center>Game Overview</center></h4>
-                  Fall Garden is an initiatory fable on self-acceptance in an autumn colored forest.<br><br>
-                  The game is split into two phases. The hub allows the player to explore the town and learn more about the villagers.<br><br>
-                  The run phase is played with a snake-like controller where the player will have to defeat enemies and fight against the villagers mental illness.
-                </div>
-                <div class="column">
-                  <h4><center>My Work</center></h4>
-                  My job on this project was to establish the programming pipeline and develop the main features of the game.<br><br>
-                  I started the project by writing a programming pipeline and sharing it with the rest of the team since all the game designers with me were also going to
-                  dive into the programming of game features.<br><br>
-                  I also developed the grid system and the character controller for both HUB and RUN phases.<br><br>
-                  This project allowed me to learn about mobile development challenges and the need for a good optimisation both for scripts and graphics.
-                </div>
-              </div>
-              <center>
-                <div class="white-button">
-                  <br>
-                  <a href="https://youtu.be/1lMIx0UGp4k" target="_blank">Watch Fall Garden gameplay</a>
-                </div>
-            </center>
-            </span>
-          </div>
-        </div>
-
-        <div class="modal-zone" id="portfolioModal4">
-          <div class="modal-content">
-            <span class="close-button" id="closeBtn4"> &times;</span>
-            <span>
-              <center>
-                <h2>Pirate Academy</h2>
-                <h4>About</h4>
-              </center>
-              <div class="row">
-                  <div class="column">
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Role</b>: Lead programmer<br>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Duration</b>: 2 months<br>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Team</b>: 40 students<br>
-                </div>
-                <div class="column">
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Genre</b>: Warioware-like<br>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Platform</b>: PC<br>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Engine</b>: UnityEngine<br>
-                </div>
-              </div>
-              <br>
-              <div class="row">
-                <div class="column">
-                  <h4><center>Game Overview</center></h4>
-                  Pirate Academy is a Warioware-like game with Roguelike aspects in which you lead a crew of pirate students from island to island with the goal to
-                  pass their piracy degree.<br><br>
-                  Discover a total of 33 mini-games, each one presenting different challenges that will let you enjoy your nautical journey.
-                </div>
-                <div class="column">
-                  <h4><center>My Work</center></h4>
-                  This game was made with a huge team of 40 students. My job on this project, as part of the technical lead team, was to develop the macro game that was going
-                  to welcome the different micro games that the other students were going to create.<br><br>
-                  I created a tool for every student to export their work and give them to me to import easily all of their work and test them in the main project.
-                </div>
-              </div>
-              <center>
-                <div class="white-button">
-                  <br>
-                  <a href="https://youtu.be/cbSNIn3zdFI" target="_blank">Watch Pirate Academy trailer</a>
-                </div>
-            </center>
-            </span>
-          </div>
-        </div>
-
-        <div class="modal-zone" id="portfolioModal5">
-          <div class="modal-content">
-            <span class="close-button" id="closeBtn5"> &times;</span>
-            <span>
-              <center>
-                <h2>Unity Modules</h2>
-                <h4>About</h4>
-              </center>
-              <div class="row">
-                  <div class="column">
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Role</b>: Owner<br>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Duration</b>: Started in July 2020<br>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Team</b>: Personnal project<br>
-                </div>
-                <div class="column">
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Genre</b>: API<br>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Platform</b>: PC<br>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Engine</b>: UnityEngine<br>
-                </div>
-              </div>
-              <br>
-              <div class="row">
-                <div class="column">
-                  <h4><center>Project Overview</center></h4>
-                  Unity Modules is a public package with tools and utilities for Unity3D.<br><br>
-                  It also includes a complete online documentation for every user to make the best use of the packages.
-                </div>
-                <!--<div class="column">
-                  <h4><center>My job</center></h4>
-                  Some text
-                </div>-->
-              </div>
-              <center>
-                <div class="white-button">
-                  <br>
-                  <a href="umo.html" target="_blank">Click here to open UMO</a>
-                </div>
-            </center>
-            </span>
-          </div>
-        </div>
-
-        <div class="modal-zone" id="portfolioModal6">
-          <div class="modal-content">
-            <span class="close-button" id="closeBtn6"> &times;</span>
-            <span>
-              <center>
-                <h2>Overstrike Arena</h2>
-                <h4>About</h4>
-              </center>
-              <div class="row">
-                  <div class="column">
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Role</b>: Project owner, Technical game designer<br>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Duration</b>: 4 months<br>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Team</b>: 7 students<br>
-                </div>
-                <div class="column">
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Genre</b>: Fast FPS<br>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Platform</b>: PC<br>
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Engine</b>: UnityEngine<br>
-                </div>
-              </div>
-              <br>
-              <div class="row">
-                <div class="column">
-                  <h4><center>Game Overview</center></h4>
-                  Overstrike Arena is a 2vs2 multiplayer online competitive game.
-                  The player embodies a character with a first person view.<br><br>
-                  The games of Overstrike Arena are fast and nervous.
-                  The objective is simple: get the Overdrive and bring it to the enemy base to score a point.<br><br>
-                  The arenas in which players will compete evolve during the game, players with the best ability to adapt will take the lead.<br><br>
-                  Finally, close combat is at the heart of the experience and the best punch user, one of the core mechanics of the controller, will take the advantage.
-                </div>
-                <div class="column">
-                  <h4><center>My Work</center></h4>
-                  I handled two roles on this project.<br><br>
-                  First of all, I am the project owner of Overstrike Arena so my job is to make sure that the gameplay intentions that the game should have are always respected.
-                  Moreover, during the 5 months of the project development, one of my responsibilities was to follow the work of the members of the team and check that the features
-                  work with each other.<br><br>
-                  When I am not working on the intentions of the game, my role is to be the technical game designer of the team.
-                  This means that I create all the technical documentation the programmer needs to develop the different features and I also help him by creating tools and developing
-                  minor aspects of the game to test new mechanics and win some time.
-                </div>
-              </div>
-              <center>
-                <!--<div class="white-button">
-                  <br>
-                  <a href="https://youtu.be/rDhEL9wTosI" target="_blank">Watch Overstrike Arena gameplay</a>
-                </div>-->
-                <div class="white-button">
-                  <br>
-                  <a href="https://store.steampowered.com/app/1937550/Overstrike_Arena/" target="blank">Steam Page</a>
-                </div>
-            </center>
-            </span>
-          </div>
-        </div>
-
-
-
-      </section>
     </div>
+    <!-- end of About -->
 
 
+    <!-- My Skillset -->
+    <div id="services" class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">My skillset</h2>
+                    <p class="p-heading">This diagram offers an overview of my Unity development skillset, reflecting
+                        the tools, systems, and workflows I use to deliver polished and efficient game experiences.</p>
+                </div>
+            </div>
 
-    <footer>
-      <div class="nco-footer">
-        2024  Nicolas  Capelier &nbsp; &nbsp; &nbsp; &nbsp; Images on this website are all mine or royalty free &nbsp; &nbsp; &nbsp; &nbsp;
-        <!--I created this page from the Reflux web template on <a href="https://templatemo.com/tm-531-reflux" target="_blank">templatemo.com</a>.	&nbsp;	&nbsp;-->
-      </div>
-    </footer>
+        </div>
+        <div class="skillset">
+            <img src="images/skillset-unity.svg" alt="skillset" />
+        </div>
+        <div class="skillset">
+            <img src="images/skillset-sdk.svg" alt="skillset" />
+        </div>
+    </div>
+    <!-- end of My Skillset -->
+
+
+    <!-- Details -->
+    <!-- <div class="split">
+        <div class="area-1">
+        </div>
+        <div class="area-2 bg-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <h2>Why Work With Me</h2>
+                            <p>I am a great communicator and love to invest the necessary time to understand the
+                                customer's problem very well</p>
+                            <h5>DESIGN TOOLS</h5>
+                            <p>My favorite design tools are Photoshop and Illustrator but I can create designs in Figma,
+                                Sketch and Adobe XD too</p>
+                            <h5>DEVELOPMENT SKILLS</h5>
+                            <p>I am familiar and work on a daily basis with HTML, CSS, JavaScript, Bootstrap and other
+                                modern frameworks</p>
+                            <div class="icons-container">
+                                <img src="images/unity-logo.png" alt="UnityEngine">
+                                <img src="images/csharp-logo.png" alt="CSharp">
+                                <img src="images/git-logo.png" alt="Git">
+                                <img src="images/notion-logo.png" alt="Notion">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- end of details -->
+
+
+    <!-- Section Divider -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <hr class="section-divider">
+            </div>
+        </div>
+    </div>
+    <!-- end of section divider -->
+
+
+    <!-- Works -->
+    <div id="projects" class="basic-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">My Work</h2>
+                    <p class="p-heading">Throughout my game developer journey, I've had the opportunity to work on a variety of projects,
+                        from concept to release and beyond.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Jolibrain -->
+                <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container project-card" onclick="openModal('modal-jolibrain')">
+                            <img class="img-fluid" src="images/portfolio-jolibrain.png" alt="Jolibrain">
+                        </div>
+                        <p><strong>Jolibrain</strong>. A brain training app for Android and iOS developed for
+                            <strong>Bright</strong>. <a class="blue" onclick="openModal('modal-jolibrain')">details</a>
+                        </p>
+                    </div>
+                </div>
+                <div id="modal-jolibrain" class="project-modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal-jolibrain')">&times;</span>
+
+                        <h2 class="modal-title">Jolibrain</h2>
+                        <p class="modal-subtitle">A brain training app developed for Bright</p>
+
+                        <!-- Image + Project Details -->
+                        <div class="modal-row">
+                            <div class="modal-column">
+                                <img src="images/portfolio-jolibrain.png" alt="Jolibrain" class="modal-image">
+                            </div>
+                            <div class="modal-column">
+                                <h4>Project Details</h4>
+                                <ul>
+                                    <li><strong>Role:</strong> Lead Developer</li>
+                                    <li><strong>Team Size:</strong> 7</li>
+                                    <li><strong>Genre:</strong> Brain Trainer</li>
+                                    <li><strong>Platform:</strong> Android, iOS</li>
+                                    <li><strong>Engine:</strong> Unity</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Responsibilities + Achievements -->
+                        <div class="modal-row">
+                            <div class="modal-column">
+                                <h4>Responsibilities</h4>
+                                <ul>
+                                    <li>Implementation of the project architecture</li>
+                                    <li>SDK implementation and maintenance</li>
+                                    <li>Technical team lead</li>
+                                    <li>Optimization</li>
+                                    <li>Release management</li>
+                                </ul>
+                            </div>
+                            <div class="modal-column">
+                                <h4>Key Achievements</h4>
+                                <ul>
+                                    <li>Reduced the app size by 55%</li>
+                                    <li>Improved performances and compatibility on iOS and older Android devices</li>
+                                    <li>Improved retention metrics by 300%</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="modal-buttons">
+                            <a href="https://jolibrain.io" target="_blank" class="modal-btn">View App</a>
+                            <a href="https://brig.ht" target="_blank" class="modal-btn secondary">Bright Website</a>
+                        </div>
+
+                        <!--Video Container-->
+                        <!-- <div class="modal-video-container">
+                            <iframe src="https://www.youtube.com/embed/1lMIx0UGp4k" title="YouTube video" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- ROD -->
+                <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container project-card" onclick="openModal('modal-rod')">
+                            <img class="img-fluid" src="images/portfolio-rod.png" alt="Reign of Dwarf">
+                        </div>
+                        <p><strong>Reign of Dwarf</strong>. An open world survival PVP game on PC developed at
+                            <strong>AnkleBreaker Studio</strong>. <a class="blue"
+                                onclick="openModal('modal-rod')">details</a>
+                        </p>
+                    </div>
+                </div>
+                <div id="modal-rod" class="project-modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal-rod')">&times;</span>
+
+                        <h2 class="modal-title">Reign of Dwarf</h2>
+                        <p class="modal-subtitle">An open world survival PVP game</p>
+
+                        <!-- Image + Project Details -->
+                        <div class="modal-row">
+                            <div class="modal-column">
+                                <img src="images/portfolio-rod.png" alt="Reign of Dwarf" class="modal-image">
+                            </div>
+                            <div class="modal-column">
+                                <h4>Project Details</h4>
+                                <ul>
+                                    <li><strong>Role:</strong> Online Game Developer</li>
+                                    <li><strong>Team Size:</strong> 10</li>
+                                    <li><strong>Genre:</strong> Multiplayer Survival</li>
+                                    <li><strong>Platform:</strong> PC</li>
+                                    <li><strong>Engine:</strong> Unity</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Responsibilities + Achievements -->
+                        <div class="modal-row">
+                            <div class="modal-column">
+                                <h4>Responsibilities</h4>
+                                <ul>
+                                    <li>Implementation of in-game and in-editor tools</li>
+                                    <li>Development of a cinematic in-game system</li>
+                                    <li>Development of a modding API with asset bundles</li>
+                                    <li>Optimization and debugging of existing features</li>
+                                </ul>
+                            </div>
+                            <div class="modal-column">
+                                <h4>Key Achievements</h4>
+                                <ul>
+                                    <li>Implemented cheat-safe in-game administration tools and spectator mode</li>
+                                    <li>Developed a scalable modding system for user generated content</li>
+                                    <li>Improved performances of user interfaces with object pooling, reduction of canvas updates and more</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="modal-buttons">
+                            <a href="https://www.mithrall.com/" target="_blank" class="modal-btn">View Game</a>
+                            <a href="https://www.anklebreaker-studio.com/" target="_blank"
+                                class="modal-btn secondary">AnkleBreaker Studio Website</a>
+                        </div>
+
+                        <!--Video Container-->
+                        <!-- <div class="modal-video-container">
+                            <iframe src="https://www.youtube.com/embed/1lMIx0UGp4k" title="YouTube video" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Seance -->
+                <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container project-card" onclick="openModal('modal-seance')">
+                            <img class="img-fluid" src="images/portfolio-seance.png" alt="Seance">
+                        </div>
+                        <p><strong>Seance</strong>. A coop multiplayer roguelike card game on PC developed as a Master
+                            Degree
+                            project at
+                            <strong>RUBIKA Supinfogame</strong>. <a class="blue"
+                                onclick="openModal('modal-seance')">details</a>
+                        </p>
+                    </div>
+                </div>
+                <div id="modal-seance" class="project-modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal-seance')">&times;</span>
+
+                        <h2 class="modal-title">Seance</h2>
+                        <p class="modal-subtitle">A coop multiplayer roguelike card game</p>
+
+                        <!-- Image + Project Details -->
+                        <div class="modal-row">
+                            <div class="modal-column">
+                                <img src="images/portfolio-seance.png" alt="Seance" class="modal-image">
+                            </div>
+                            <div class="modal-column">
+                                <h4>Project Details</h4>
+                                <ul>
+                                    <li><strong>Role:</strong> Lead Developer & Technical Game Designer</li>
+                                    <li><strong>Team Size:</strong> 9</li>
+                                    <li><strong>Genre:</strong> Multiplayer Roguelike</li>
+                                    <li><strong>Platform:</strong> PC</li>
+                                    <li><strong>Engine:</strong> Unity</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Responsibilities + Achievements -->
+                        <div class="modal-row">
+                            <div class="modal-column">
+                                <h4>Responsibilities</h4>
+                                <ul>
+                                    <li>Development of the core game features</li>
+                                    <li>Implementation of the project architecture</li>
+                                    <li>Technical team lead</li>
+                                    <li>Development and maintenance of the network features</li>
+                                    <li>Tool development</li>
+                                </ul>
+                            </div>
+                            <div class="modal-column">
+                                <h4>Key Achievements</h4>
+                                <ul>
+                                    <li>Developed a visual scripting tool to allow game artists to implement feedback on top of the gameplay</li>
+                                    <li>Implemented a complex AI system with reaction to players' actions</li>
+                                    <li>Developed a ScriptableObject management tool to handle the data of a card game</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <br><img src="images/sequencer.gif" alt="Sequencer">
+                        <p>"Sequencer" A visual scripting tool to ease the implementation of feedback by game artists</p>
+
+                        <!-- <div class="modal-buttons">
+                            <a href="https://jolibrain.io" target="_blank" class="modal-btn">View App</a>
+                            <a href="https://brig.ht" target="_blank" class="modal-btn secondary">Bright Website</a>
+                        </div> -->
+
+                        <!--Video Container-->
+                        <div class="modal-video-container">
+                            <iframe src="https://www.youtube.com/embed/bIUXMw96r7g" title="YouTube video"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- OSA -->
+                <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container project-card" onclick="openModal('modal-osa')">
+                            <img class="img-fluid" src="images/portfolio-overstrike-arena.png" alt="Overstrike Arena">
+                        </div>
+                        <p><strong>Overstrike Arena</strong>. A competitive multiplayer game on PC developed at
+                            <strong>RUBIKA Supinfogame</strong> and released on Steam. <a class="blue"
+                                onclick="openModal('modal-osa')">details</a>
+                        </p>
+                    </div>
+                </div>
+                <div id="modal-osa" class="project-modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal-osa')">&times;</span>
+
+                        <h2 class="modal-title">Overstrike Arena</h2>
+                        <p class="modal-subtitle">A competitive multiplayer game</p>
+
+                        <!-- Image + Project Details -->
+                        <div class="modal-row">
+                            <div class="modal-column">
+                                <img src="images/portfolio-overstrike-arena.png" alt="Overstrike Arena"
+                                    class="modal-image">
+                            </div>
+                            <div class="modal-column">
+                                <h4>Project Details</h4>
+                                <ul>
+                                    <li><strong>Role:</strong> Online Game Developer & Technical Game Designer</li>
+                                    <li><strong>Team Size:</strong> 7</li>
+                                    <li><strong>Genre:</strong> Competitive Multiplayer</li>
+                                    <li><strong>Platform:</strong> PC</li>
+                                    <li><strong>Engine:</strong> Unity</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Responsibilities + Achievements -->
+                        <div class="modal-row">
+                            <div class="modal-column">
+                                <h4>Responsibilities</h4>
+                                <ul>
+                                    <li>Design of the game</li>
+                                    <li>Implementation of the project architecture</li>
+                                    <li>Development and maintenance of the network features</li>
+                                    <li>Optimization</li>
+                                    <li>Implementation of the Steamworks SDK</li>
+                                </ul>
+                            </div>
+                            <div class="modal-column">
+                                <h4>Key Achievements</h4>
+                                <ul>
+                                    <li>Developed a completed experience for a competitive multipler game</li>
+                                    <li>Published Overstrike Arena on Steam</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="modal-buttons">
+                            <a href="https://store.steampowered.com/app/1937550/Overstrike_Arena/" target="_blank"
+                                class="modal-btn">Steam Page</a>
+                            <!-- <a href="https://brig.ht" target="_blank" class="modal-btn secondary">Bright Website</a> -->
+                        </div>
+
+                        <!--Video Container-->
+                        <div class="modal-video-container">
+                            <iframe src="https://www.youtube.com/embed/u8B0kSSOK6M" title="YouTube video"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fall Garden -->
+                <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container project-card" onclick="openModal('modal-fg')">
+                            <img class="img-fluid" src="images/portfolio-fall-garden.png" alt="Fall Garden">
+                        </div>
+                        <p><strong>Fall Garden</strong>. A Snake-like narrative game for Android and iOS developed
+                            at
+                            <strong>RUBIKA Supinfogame</strong>. <a class="blue"
+                                onclick="openModal('modal-fg')">details</a>
+                        </p>
+                    </div>
+                </div>
+                <div id="modal-fg" class="project-modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal-fg')">&times;</span>
+
+                        <h2 class="modal-title">Fall Garden</h2>
+                        <p class="modal-subtitle">A Snake-like narrative game</p>
+
+                        <!-- Image + Project Details -->
+                        <div class="modal-row">
+                            <div class="modal-column">
+                                <img src="images/portfolio-fall-garden.png" alt="Fall Garden" class="modal-image">
+                            </div>
+                            <div class="modal-column">
+                                <h4>Project Details</h4>
+                                <ul>
+                                    <li><strong>Role:</strong> Lead Developer & Game Designer</li>
+                                    <li><strong>Team Size:</strong> 8</li>
+                                    <li><strong>Genre:</strong> Snake-like narrative</li>
+                                    <li><strong>Platform:</strong> Android, iOS</li>
+                                    <li><strong>Engine:</strong> Unity</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Responsibilities + Achievements -->
+                        <div class="modal-row">
+                            <div class="modal-column">
+                                <h4>Responsibilities</h4>
+                                <ul>
+                                    <li>Development of the core game features</li>
+                                    <li>Implementation of the project architecture</li>
+                                    <li>Technical team lead</li>
+                                    <li>Optimization</li>
+                                </ul>
+                            </div>
+                            <div class="modal-column">
+                                <h4>Key Achievements</h4>
+                                <ul>
+                                    <li>Delivered a complete mobile game experience</li>
+                                    <li>Ensured functionality and performance for a 3D mobile game</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- <div class="modal-buttons">
+                            <a href="https://jolibrain.io" target="_blank" class="modal-btn">View App</a>
+                            <a href="https://brig.ht" target="_blank" class="modal-btn secondary">Bright Website</a>
+                        </div> -->
+
+                        <!--Video Container-->
+                        <div class="modal-video-container">
+                            <iframe src="https://www.youtube.com/embed/1lMIx0UGp4k" title="YouTube video"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jolibrain -->
+                <!--<div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container project-card" onclick="openModal('modal-jolibrain')">
+                            <img class="img-fluid" src="images/portfolio-jolibrain.png" alt="Jolibrain">
+                        </div>
+                        <p><strong>Jolibrain</strong>. A brain training app for Android and iOS developed for
+                            <strong>Bright</strong>. <a class="blue" onclick="openModal('modal-jolibrain')">details</a>
+                        </p>
+                    </div>
+                </div>
+                <div id="modal-jolibrain" class="project-modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal-jolibrain')">&times;</span>
+                        <h3>Jolibrain</h3>
+                        <p>Introduction to the project.</p>
+                        <img src="images/portfolio-jolibrain.png" alt="Jolibrain Full View" class="img-fluid">
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <!-- end of works -->
+
+
+    <!-- Section Divider -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <hr class="section-divider">
+            </div>
+        </div>
+    </div>
+    <!-- end of section divider -->
+
+
+    <!-- Questions -->
+    <div id="faq" class="accordion-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">Frequent questions</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Do you work with other game engines than UnityEngine?
+                                </button>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>I have been using UnityEngine professionally for more than 5 years now and gained a lot of
+                                        expertise on this engine. Therefore I feel comfortable with Unity's workflows and pipelines.</p>
+                                    <p>This is why I do not plan to switch to any other game engine like UnrealEngine or
+                                        Godot in the near future. However, I remain interested in working with an in-house engine.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Your recent projects are focused on mobile apps. Do you feel comfortable
+                                    developing games for other platforms?
+                                </button>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>Absolutely! Recent opportunities led me to work mostly on mobile apps.
+                                        However, I have experience working on PC and WebGL games and I do not fear working on
+                                        console games.</p>
+                                    <p>Developing mobile games brought me a lot of experience regarding optimisation,
+                                        UI, scalability and LiveOps. I am confident I can take advantage of this
+                                        knowledge to improve the quality of my work on other platforms.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    Will I receive any included maintenance or warranty after project delivery?
+                                </button>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The best way to reach me is through the contact form of by messaging me on my
+                                    social
+                                    media accounts. For a fast quote make sure your provide many project details
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    If something goes wrong with the project can I have my money back?
+                                </button>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The best way to reach me is through the contact form of by messaging me on my
+                                    social
+                                    media accounts. For a fast quote make sure your provide many project details
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                    aria-controls="collapseFive">
+                                    You have mostly worked in small teams, how do you handle large-scale
+                                    collaborative
+                                    development?
+                                </button>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>While many of my recent projects were developed within small teams or
+                                        independently, I always apply practices that scale well in larger
+                                        environments
+                                        such as version control workflows (Git/Plastic SCM), clean code
+                                        architecture,
+                                        detailed documentation, and modular design.</p>
+                                    <p>In previous roles, I have also collaborated with external artists, sound
+                                        designers, and QA testers, which helped me develop strong communication
+                                        habits
+                                        and the ability to integrate into broader pipelines. I am confident that my
+                                        attention to process, combined with my adaptability, would make me a strong
+                                        contributor within a larger studio structure.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of questions -->
+
+
+    <!-- Contact -->
+    <div id="contact" class="form-1 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Contact</h2>
+                    <p class="p-heading">
+                        You can contact me anytime on <a href="https://www.linkedin.com/in/nicolas-capelier/"
+                            target="_blank" class="blue">Linkedin</a> or by email at
+                        <a id="email-address" class="blue"
+                            href="mailto:capelier.nicolas@gmail.com">capelier.nicolas@gmail.com</a>
+                        <button id="copy-button" class="copy-button" title="Copy email">
+                            <i id="copy-icon" class="fas fa-clipboard"></i>
+                        </button>
+                        <span id="copy-confirmation" class="copy-confirmation">Copied!</span>
+                    </p>
+                    <p>You can also contact me with this form:</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Contact Form -->
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" class="form-control-input" required>
+                            <label class="label-control" for="name">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" class="form-control-input" required>
+                            <label class="label-control" for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" class="form-control-textarea" required></textarea>
+                            <label class="label-control" for="message">Message</label>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">Submit</button>
+                        </div>
+                    </form>
+                    <!-- Confirmation message -->
+                    <div id="confirmation" class="confirmation-message">✅ Message sent successfully!</div>
+                    <div id="error" class="confirmation-message error-message">❌ An error occurred. Please try
+                        again.
+                    </div>
+                    <!-- end of Confirmation message -->
+                    <!-- end of contact form -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of contact -->
+
+
+    <!-- Copyright -->
+    <div class="copyright bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">2025 - <a class="no-line">Nicolas Capelier</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Images on this website are all mine or royalty free.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end of copyright -->
+
 
     <!-- Scripts -->
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/custom.js"></script>
-
-    <script src="assets/js/nco-modal-main.js"></script>
-
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
     <script>
-      //according to loftblog tut
-      $(".main-menu li:first").addClass("active");
+        document.getElementById("copy-button").addEventListener("click", function () {
+            const email = document.getElementById("email-address").textContent.trim();
+            const icon = document.getElementById("copy-icon");
+            const confirmation = document.getElementById("copy-confirmation");
 
-      var showSection = function showSection(section, isAnimate) {
-        var direction = section.replace(/#/, ""),
-          reqSection = $(".section").filter(
-            '[data-section="' + direction + '"]'
-          ),
-          reqSectionPos = reqSection.offset().top - 0;
+            navigator.clipboard.writeText(email).then(() => {
+                icon.classList.remove("fa-clipboard");
+                icon.classList.add("fa-check");
 
-        if (isAnimate) {
-          $("body, html").animate(
-            {
-              scrollTop: reqSectionPos
-            },
-            800
-          );
-        } else {
-          $("body, html").scrollTop(reqSectionPos);
-        }
-      };
+                confirmation.classList.add("visible");
 
-      var checkSection = function checkSection() {
-        $(".section").each(function() {
-          var $this = $(this),
-            topEdge = $this.offset().top - 80,
-            bottomEdge = topEdge + $this.height(),
-            wScroll = $(window).scrollTop();
-          if (topEdge < wScroll && bottomEdge > wScroll) {
-            var currentId = $this.data("section"),
-              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
-            reqLink
-              .closest("li")
-              .addClass("active")
-              .siblings()
-              .removeClass("active");
-          }
+                setTimeout(() => {
+                    icon.classList.remove("fa-check");
+                    icon.classList.add("fa-clipboard");
+                    confirmation.classList.remove("visible");
+                }, 2000);
+            }).catch(err => {
+                console.error("Clipboard error:", err);
+                confirmation.textContent = "Error copying";
+                confirmation.style.color = "red";
+                confirmation.classList.add("visible");
+
+                setTimeout(() => {
+                    confirmation.textContent = "Copied!";
+                    confirmation.style.color = "green";
+                    confirmation.classList.remove("visible");
+                }, 2000);
+            });
         });
-      };
-
-      $(".main-menu").on("click", "a", function(e) {
-        e.preventDefault();
-        showSection($(this).attr("href"), true);
-      });
-
-      $(window).scroll(function() {
-        checkSection();
-      });
     </script>
-  </body>
+</body>
+
 </html>
